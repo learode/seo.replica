@@ -1,0 +1,25 @@
+{
+  "name": "seo",
+  "version": "1.0.0",
+  "description": "\"Replica and using wsl\"",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mulFranck/seo.replica.git"
+  },
+  "author": "mulfranck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mulFranck/seo.replica/issues"
+  },
+  "homepage": "https://github.com/mulFranck/seo.replica#readme",
+  "devDependencies": {
+    "bootstrap": "^5.0.2"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2"
+  }
+}
