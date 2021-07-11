@@ -1,0 +1,89 @@
+body{
+    background: #fff;
+}
+
+/************** =header related **************/
+/*****************************************/
+.header {
+  height:6.27rem;
+  background-color: #33ccc5;
+  line-height: 60px;
+
+}
+.navbar-brand {
+  position: relative;
+  font-size: xx-large;
+  padding-bottom: .7rem;
+  margin: 0 4rem 0 0;
+  /* background-color: gray; */
+}
+.header h4 {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 800;
+}
+.header img {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 20px;
+  left: 133px;
+}
+.navbar-nav .nav-link {
+  margin: 0 .5rem;
+  color: white !important;
+
+}
+
+
+
+
+/************** =section =home related **************/
+/*****************************************/
+#home {
+  padding-top: 7.25rem;
+  height: 100vh;
+  background: url(../img/banner-dec-right.png) no-repeat center 3%/cover,
+                    url(/img/banner-dec-left.png) no-repeat;
+}
+#info-stat {
+  margin-left: -1.0rem;
+}
+.info-stat {
+  text-transform: capitalize;
+  /* justify-content: center; */
+  /* padding: 0 13rem; */
+}
+h6 {
+  font-size: 14px !important;
+  color: #2C2E33;
+}
+
+.info-stat h4 {
+  font-size: 20px;
+
+}
+#main-caption h1 {
+  font-size: 60px;
+  font-weight: 800;
+  border-top: 1px solid wheat;
+  margin-top: 1.875rem;
+  padding-top:1.25rem;
+  padding-left: 1.24rem;
+  padding-right: 0px;
+  color: #FC7D59;
+  line-height:5rem;
+}
+
+.main-btn-green {
+  background-color: #33ccc5;
+  box-shadow: 0 2px 2px 0px #4771CB;
+  margin: 2rem 1rem;
+  font-size: 1rem;
+  color:white;
+}
+
+.main-btn-green:hover {
+  background-color: #4771CB;
+  box-shadow: 0 2px 2px 0px #33ccc5;
+}
