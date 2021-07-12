@@ -14,23 +14,25 @@
 </head>
 
 <body>
-  <header class="header navbar navbar-expand-md">
-    <div class="container align-items-center">
-      <a class="navbar-brand text-white">
+  <header class="header navbar navbar-dark navbar-expand-xl">
+    <div class="container">
+      <a class="navbar-brand">
         <h4>SEO Dream</h4>
         <img src="img/logo-icon.png" alt="Dreams land logo" />
       </a>
 
-      <button class="navbar-toggler" data-target="navlist" data-toggle="collapse" type="button">
+      <button class="navbar-toggler" type="button" data-bs-target="#navlist"
+        data-bs-toggle="collapse" aria-controls="navlist" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
 
-      <div class="collapse navbar-collapse" id="navlist-row">
-        <ul class="navbar-nav d-flex">
+      <div class="collapse navbar-collapse" id="navlist">
+        <ul class="navbar-nav">
           <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
           <li class="nav-item"><a href="#features" class="nav-link">features</a></li>
-          <li class="nav-item"><a href="#aboutus" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="progress.html" class="nav-link">About Us</a></li>
           <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
           <li class="nav-item"><a href="#portofolio" class="nav-link">Portofolio</a></li>
           <li class="nav-item"><a href="contact" class="nav-link">Contanct Us</a></li>
@@ -44,23 +46,23 @@
   <section class="home" id="home">
     <div class="container">
       <!-- row for the home section with two col-6 from small to xl -->
-      <!-- the first col-6 with a row to evenly manage and less my on styles work -->
-      <div class="row">
-        <div class="col-6 col-sm-6">
-          <div class="row g-0 justify-content-around" id="info-stat">
-            <div class="col-md-4">
+      <!-- the first col-12 with a row to evenly manage and less my on styles work -->
+      <div class="row text-center">
+        <div class="col-12 col-md-6">
+          <div class="row g-0" id="info-stat">
+            <div class="col-12 col-md-4">
               <hgroup class="info-stat">
                 <h6>agency status:</h6>
                 <h4>ready work</h4>
               </hgroup>
             </div>
-            <div class="col-md-4">
+            <div class="col-12 col-md-4">
               <hgroup class="info-stat">
                 <h6>price:</h6>
                 <h4>$740/month</h4>
               </hgroup>
             </div>
-            <div class="col-md-4">
+            <div class="col-12 col-md-4">
               <hgroup class="info-stat">
                 <h6>schedules:</h6>
                 <h4>$450/meeting</h4>
@@ -78,10 +80,107 @@
 
 
         </div>
-        <div class="col-6 col-sm-6">
+        <div class="col-md-6">
           <img class="img-fluid" src="img/banner-right-image.png" alt="together with us banner">
         </div>
       </div>
+    </div>
+  </section>
+
+
+
+  <section class="container-fluid" id="features">
+    <div class="row row-cols-1 row-cols-md-4 text-center">
+      <div class="col-lg-12">  
+        <div class="feat-content row gx-0">
+      <!-- feature one -->
+          <div class="col-12 col-md-3">
+          <div class="feat-1">
+            <div class="feat-img">
+              01
+              <!-- <img src="img/features-number-01.png" alt="feature number one"> -->
+            </div>
+            <div class="feat-icon">
+              <!-- <img src="img/features-icon-black-01.png" alt="feature nunber two"> -->
+            </div>
+            <h4 class="feat-title">Reach Out</h4>
+            <div class="fixed-len-line"></div>
+            <p class="feat-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+              repudiandae ipsa!</p>
+          </div>
+          </div>
+
+      <!-- feature two -->
+          <div class="col-12 col-md-3">
+          <div class="feat-2">
+            <div class="feat-img">
+              02
+              <!-- <img src="img/features-number-02.png" alt="feature number one"> -->
+            </div>
+            <div class="feat-icon">
+              <!-- <img src="img/features-icon-black-02.png" alt="feature nunber two"> -->
+            </div>
+            <h4 class="feat-title">Develop a Strategy</h4>
+            <div class="fixed-len-line"></div>
+            <p class="feat-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero id
+              ipsam eligendi ea?</p>
+          </div>
+          </div>
+      <!-- feature three -->
+          <div class="col-12 col-md-3">
+          <div class="feat-3">
+            <div class="feat-img">
+              03
+              <!-- <img src="img/features-number-03.png" alt="feature number three"> -->
+            </div>
+            <div class="feat-icon">
+              <!-- <img src="img/features-icon-black-01.png" alt="feature icon nunber three"> -->
+            </div>
+            <h4 class="feat-title">Implementation</h4>
+            <div class="fixed-len-line"></div>
+            <p class="feat-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero id
+              <a href="#">ipsam eligendi</a> ea?
+            </p>
+          </div>
+          </div>
+      <!-- feature four -->
+          <div class="col-12 col-md-3">
+          <div class="feat-4">
+            <div class="feat-img">
+              04
+              <!-- <img src="img/features-number-04.png" alt="feature number four"> -->
+            </div>
+            <div class="feat-icon">
+              <!-- <img src="img/features-icon-black-02.png" alt="feature icon nunber four"> -->
+            </div>
+            <h4 class="feat-title">Analyze Results</h4>
+            <div class="fixed-len-line"></div>
+            <p class="feat-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero id
+              ipsam eligendi ea?</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-12">
+        <div class="skill-stat">
+          <div class="col-md-3">
+            <div class="progress">
+              <span class="progress-left">
+                <span class="progress-bar"></span>
+              </span>
+            </div>
+            <div class="progress">
+              <span class="progress-right">
+                <span class="progress-bar"></span>
+              </span>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>>
     </div>
   </section>
   <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
