@@ -40,12 +40,11 @@ body{
 /************** =section =home related **************/
 /*****************************************/
 #home {
-  display: block;
   padding-top: 7.25rem;
-  height: 100vh;
+  height: 100%;
   background: url(../img/banner-dec-right.png) no-repeat center 3%/cover,
                     url(/img/banner-dec-left.png) no-repeat;
-  margin-bottom: 7.52rem;
+  margin-bottom: 10.52rem;
 }
 #info-stat {
   margin-left: -1.0rem;
@@ -95,24 +94,33 @@ h6 {
 
 /************** =section features **************/
 /*****************************************/
-#features {
-  margin-top: 36rem;
-  padding: 5rem;
-  display: block;
+
+.features {
+  width: 100%;
+  background-color: whitesmoke;
+  background-size:9%;
+  border-radius: 50px; 
+  
 }
 .feat-content {
-  border-radius: 50px; 
+  margin-left: -10px;
+  border-radius: 50px;
+  background-color: white;
   box-shadow: 0 0 10px 0px gray;
-  width: 100%;
-  position: relative;
-  /*  */
+  width: 102%;
+  margin-bottom: 3rem;
+  /* position: relative; */
+  z-index: 5999 !important;
 }
 
 .feat-1, .feat-2, .feat-3, .feat-4 {
-  position: relative;
-  padding: 5rem 1rem;
+  padding: 4rem 1rem;
 }
 
+.img-rel {
+  position: relative;
+
+}
 .feat-img {
   background-repeat: no-repeat;
   background-position: center;
@@ -122,8 +130,9 @@ h6 {
   padding: 2rem 3rem;
   position: absolute;
   top:-60px;
-  right:25%;
-  /* margin: .4rem; */
+  left: 40%;
+  /* right: 40%; */
+  /* margin-top: px; */
 }
 .feat-1 .feat-img {background-image: url(../img/features-number-01.png);}
 .feat-2 .feat-img {background-image: url(../img/features-number-02.png);}
@@ -150,7 +159,8 @@ h6 {
   background-position: 50% 20%;
   color: white;
   border-radius: 50px;
-  padding: 5rem 1rem;
+  padding: 4rem 1rem;
+  /* margin-bottom: 1rem; */
 }
 .feat-1:hover,  .feat-3:hover, .feat-1:hover .feat-icon, .feat-3:hover .feat-icon {
   background-image:url(../img/features-icon-white-01.png), linear-gradient(to right, #31C9C5 5%, #0A90C3 100%);
@@ -167,5 +177,232 @@ h6 {
   margin: 35px auto;
 }
 
+
+
+/*   
+  margin: -2.5rem 0px;
+  padding: 5rem 0px;
+} */
+
+
 /************** =progress bar **************/
 /*****************************************/
+.progress {
+  margin: 2rem auto;
+  width:150px;
+  height: 150px;
+  background-color: transparent;
+  position: relative;
+}
+.progress::after {
+  content:"";/* without the content "" all neath properties ain't working */
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  border-radius: 50%;
+  border-width: 6px;
+  border-color: gray;
+  z-index: 1;
+  /* background-color: transparent; */
+}
+
+.progress>span {
+  width: 50%;
+  height: 100%;
+  /* background-color: transparent; */
+  overflow: hidden;
+  position:absolute;
+  top:0;
+  z-index: 5;
+}
+
+.progress-left {
+  left:0;
+}
+.progress-right {
+  right:0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 100%;
+  background-color:transparent !important;
+  border-width: 5px;
+  border-style: solid;
+  position: absolute;
+  top:0;
+}
+
+.progress-left .progress-bar {
+  left:100%;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-left: 0;
+  transform-origin: center left;
+}
+.progress-right .progress-bar {
+  right:100%;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-right: 0;
+  transform-origin: center right;
+  /* animation: loading-1 2s linear forwards; */
+}
+
+.progress-bar {
+  border-color:#FC6A54;
+}
+
+.pg-web .progress-right .progress-bar {
+  animation: loading-web-1 1s linear forwards;
+}
+.pg-web .progress-left .progress-bar {
+  animation: loading-web-2 1s linear forwards 1s;
+}
+
+.pg-wordpress .progress-right .progress-bar {
+  animation: loading-word-1 1s linear forwards 1.1s;
+}
+.pg-wordpress .progress-left .progress-bar {
+  animation: loading-word-2 0.3s linear forwards 2.1s;
+}
+.pg-marketing .progress-right .progress-bar {
+  animation: loading-mking-1 1s linear forwards 2.0s;
+}
+.pg-marketing .progress-left .progress-bar {
+  animation: loading-mking-2 0.5s linear forwards 3s;
+}
+.pg-photoshop .progress-right .progress-bar {
+  animation: loading-photo-1 1s linear forwards 2.5s;
+}
+.pg-photoshop .progress-left .progress-bar {
+  animation: loading-photo-2 .8s linear forwards 3.5s;
+}
+
+@keyframes loading-web-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes loading-web-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(80deg);
+  }
+}
+
+@keyframes loading-word-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes loading-word-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(60deg);
+  }
+}
+
+@keyframes loading-mking-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes loading-mking-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes loading-photo-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes loading-photo-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(70deg);
+  }
+}
+
+.progress-value {
+  width: 95%;
+  height: 95%;
+  position: absolute;
+  top: 33.5px;
+}
+.progress-value p {
+  margin: 0rem auto;
+  letter-spacing: -1px;
+  font-weight: 700;
+  font-size: 0.81rem;
+}
+.progress-value p:nth-child(1){
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+
+/************** =section about us **************/
+/*****************************************/
+.img-bg {
+  width: 090%;
+  height: 100%;
+  background-image: url(../img/about-left-image.png);
+  background-size:contain;
+  /* background-position: center center; */
+  background-repeat: no-repeat;
+}
+.text-green {
+  color: #088EC3;
+}
+.text-hdr-color {
+  color:#33ccc5 ;
+}
+.about {
+  margin-top: 8.5rem;
+}
+
+.aboutus {
+  padding: .1rem 1rem;
+}
+.aboutus h5 {
+  font-size:90%;
+  font-weight: 700;
+}
+.aboutus h2 {
+  line-height: 3rem;
+  font-weight: 800;
+}
+.about .info h2{
+  font-weight: 900;
+  /* margin-top: -154px; */
+}
+.info p {
+  margin-top: -010px;
+  margin-bottom: 2rem;
+}
