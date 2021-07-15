@@ -37,11 +37,14 @@ body{
   top: 20px;
   left: 133px;
 }
-/* .navbar-nav {
-  margin-right: -14;
-  margin-left: -14px;
-  padding-right: 50%;
-} */
+.navbar-nav {
+  /* position: absolute; */
+  width: 100%;
+  align-items: center;
+  background-color: #33ccc5;
+  /* margin-right:-100%;
+  margin-left:-18px; */
+}
 .navbar-nav .nav-link {
   margin: 0 .5rem;
   color: white !important;
