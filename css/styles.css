@@ -1,13 +1,22 @@
+* {
+  box-sizing: border-box;
+}
 body{
     background: #fff;
+}
+.text-green {
+  color: #088EC3;
+}
+.text-hdr-color {
+  color:#33ccc5 !important;
 }
 
 /************** =header related **************/
 /*****************************************/
+
 .header {
   height:6.27rem;
   background-color: #33ccc5;
-
 }
 .navbar-brand {
   position: relative;
@@ -28,11 +37,16 @@ body{
   top: 20px;
   left: 133px;
 }
+/* .navbar-nav {
+  margin-right: -14;
+  margin-left: -14px;
+  padding-right: 50%;
+} */
 .navbar-nav .nav-link {
   margin: 0 .5rem;
   color: white !important;
-
 }
+
 
 
 
@@ -95,44 +109,41 @@ h6 {
 /************** =section features **************/
 /*****************************************/
 
-.features {
+/* .features {
   width: 100%;
   background-color: whitesmoke;
-  background-size:9%;
+  /* background-size:9%; 
   border-radius: 50px; 
   
-}
+} */
 .feat-content {
-  margin-left: -10px;
+  /* margin-left: -10px; */
   border-radius: 50px;
   background-color: white;
   box-shadow: 0 0 10px 0px gray;
-  width: 102%;
+  width: 100%;
   margin-bottom: 3rem;
-  /* position: relative; */
+  position: relative;
   z-index: 5999 !important;
 }
 
 .feat-1, .feat-2, .feat-3, .feat-4 {
-  padding: 4rem 1rem;
+  padding: 4rem .5rem;
 }
 
-.img-rel {
-  position: relative;
-
-}
-.feat-img {
+h6.feat-img {
   background-repeat: no-repeat;
-  background-position: center;
-  font-size: 2rem;
+  /* background-position: center; */
   color: white;
   font-weight: 700;
-  padding: 2rem 3rem;
-  position: absolute;
-  top:-60px;
-  left: 40%;
-  /* right: 40%; */
-  /* margin-top: px; */
+  width: 110px;
+  height: 69px;
+  line-height: 65px;
+  font-size: 2rem !important;
+  margin: 0 auto;
+  margin-top: -104px;
+  margin-bottom: 2.5rem;
+
 }
 .feat-1 .feat-img {background-image: url(../img/features-number-01.png);}
 .feat-2 .feat-img {background-image: url(../img/features-number-02.png);}
@@ -156,11 +167,9 @@ h6 {
   /* background-image: ; */
   
   background-repeat:  no-repeat;
-  background-position: 50% 20%;
+  background-position: 50% 18%;
   color: white;
   border-radius: 50px;
-  padding: 4rem 1rem;
-  /* margin-bottom: 1rem; */
 }
 .feat-1:hover,  .feat-3:hover, .feat-1:hover .feat-icon, .feat-3:hover .feat-icon {
   background-image:url(../img/features-icon-white-01.png), linear-gradient(to right, #31C9C5 5%, #0A90C3 100%);
@@ -179,10 +188,16 @@ h6 {
 
 
 
-/*   
-  margin: -2.5rem 0px;
-  padding: 5rem 0px;
-} */
+.skill-stat {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: whitesmoke;
+  margin-top: -8rem;
+  width:100%;
+  padding-top: 5rem;
+  z-index: -999989;
+  border-radius: 50px;
+}
 
 
 /************** =progress bar **************/
@@ -370,12 +385,6 @@ h6 {
 /************** =section about us **************/
 /*****************************************/
 
-.text-green {
-  color: #088EC3;
-}
-.text-hdr-color {
-  color:#33ccc5 ;
-}
 
 .about {
   margin-top: 5rem;
@@ -386,17 +395,8 @@ h6 {
   background: url(../img/about-left-image.png) no-repeat;
   background-size: contain;
 }
-.about hgroup h5 {
-  padding-top: 1.5rem;
-  font-size: 95%;
-  font-weight: 800;
-  margin-bottom: 1.3rem;
-}
-.about-main hgroup h2 {
-  font-weight: 900;
-  line-height: 3rem;
-  margin-bottom: 1.5rem;
-}
+
+
 
 .about-main .info h2 {
   font-weight: 900;
@@ -414,14 +414,148 @@ h6 {
   line-height: 1,5rem;
   font-size: 1.125rem;
 }
+/************** =general  **************/
+/*****************************************/
+hgroup h5  {
+  padding-top: 1.5rem;
+  font-size: 95%;
+  font-weight: 800;
+  margin-bottom: 1.3rem;
+}
+hgroup h2 {
+  font-weight: 900;
+  line-height: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+/************** =section services **************/
+/*****************************************/
+.service-item {
+  width: 100%;
+  height: 100%;
+  padding: 67px 1.5rem 2.5rem;
+  box-shadow: 0 0 2px 0 lightgrey;
+  /* flex-wrap: wrap;
+  justify-content: center;
+  text-align: center; */
+}
+#services .col-md-4 {
+  margin-bottom: 1.5rem !important;
+}
+.service-item:hover {
+  box-shadow: 0 0 4px 1px gray;
+  transform: scale(1.1);
+}
+
 
 .media-img {
-  display: inline-block;
-  width: 5rem;
-  height: 80px;
+  /* flex-wrap:; */
   border-radius: 50%;
-  background-color: #F7F7F7;
+  min-height:80px;
+  max-height:80px;
+  min-width: 5rem;
+  max-width:5rem;
+  margin-bottom: 1rem;
+}
+.media-img img {
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+}
+
+/************** =section portfolio **************/
+/*****************************************/
+.showcase-objects {
+  display: flex;
+  min-height: 400px;
+  max-height: 400px;
+  /* flex-wrap: nowrap; */
+  /* visibility: hidden; */
+  overflow:hidden
+}
+#portfolio .showcase-objects .item {
+  position: relative;
+  top: 0px;
+  width: 16.875rem;
+  height: 11.5625rem;
+  border-radius: 50px;
+  margin: 1rem .5rem;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 50px;
+}
+.hover-content {
+  position: absolute;
+  border-radius: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   text-align: center;
-  /* margin:; */
-  /* justify-content: center; */
+  color: white;
+  background: linear-gradient(to right, #31C9C5 0%, #088EC3 100%);
+  opacity: 0;
+}
+
+
+
+
+/************** =heading **************/
+/*****************************************/
+#contact {
+  margin-top: 7rem;
+  padding-top: 7em;
+  padding-bottom: 7rem;
+  background-image: url(/img/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form-control {
+  border: 2px solid #EDEDED;
+}
+.contact {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-radius: 50px;
+  background-color: white;
+}
+ .contact:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 3px 1px lightslategray;
+}
+.contactus {
+  margin-top: 0.8rem;
+  padding-top: 1rem;
+  border: 2px solid #EDEDED;
+  padding-bottom: 1.6rem;
+  margin-bottom: 2.5rem;
+}
+.contactus div{
+  margin-bottom: 1.2rem;
+
+}
+.contactus a {
+  font-size: 80%;
+  text-decoration: none;
+  color: #B8B2BA;
+}
+
+.contactus, a:hover {
+  color:rgb(34, 33, 33);
+  transform: scale(1.1);
+}
+
+footer {
+  margin: 2rem auto;
+  padding-top: 1rem;
+}
+footer div a {
+  text-decoration: none;
 }
