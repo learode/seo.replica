@@ -23,7 +23,6 @@ body{
   font-size: xx-large;
   padding-bottom: .7rem;
   margin: 0 4rem 0 0;
-  /* background-color: gray; */
 }
 .header h4 {
   display: inline-block;
@@ -38,12 +37,9 @@ body{
   left: 133px;
 }
 .navbar-nav {
-  /* position: absolute; */
   width: 100%;
   align-items: center;
   background-color: #33ccc5;
-  /* margin-right:-100%;
-  margin-left:-18px; */
 }
 .navbar-nav .nav-link {
   margin: 0 .5rem;
@@ -68,8 +64,6 @@ body{
 }
 .info-stat {
   text-transform: capitalize;
-  /* justify-content: center; */
-  /* padding: 0 13rem; */
 }
 h6 {
   font-size: 14px !important;
@@ -112,15 +106,8 @@ h6 {
 /************** =section features **************/
 /*****************************************/
 
-/* .features {
-  width: 100%;
-  background-color: whitesmoke;
-  /* background-size:9%; 
-  border-radius: 50px; 
-  
-} */
+
 .feat-content {
-  /* margin-left: -10px; */
   border-radius: 50px;
   background-color: white;
   box-shadow: 0 0 10px 0px gray;
@@ -136,7 +123,6 @@ h6 {
 
 h6.feat-img {
   background-repeat: no-repeat;
-  /* background-position: center; */
   color: white;
   font-weight: 700;
   width: 110px;
@@ -166,9 +152,7 @@ h6.feat-img {
 .feat-2 .feat-icon, .feat-4 .feat-icon {background-image: url(../img/features-icon-black-02.png);}
 
 
-.feat-1:hover, .feat-2:hover, .feat-3:hover, .feat-4:hover {
-  /* background-image: ; */
-  
+.feat-1:hover, .feat-2:hover, .feat-3:hover, .feat-4:hover {  
   background-repeat:  no-repeat;
   background-position: 50% 18%;
   color: white;
@@ -223,13 +207,11 @@ h6.feat-img {
   border-width: 6px;
   border-color: gray;
   z-index: 1;
-  /* background-color: transparent; */
 }
 
 .progress>span {
   width: 50%;
   height: 100%;
-  /* background-color: transparent; */
   overflow: hidden;
   position:absolute;
   top:0;
@@ -405,8 +387,6 @@ h6.feat-img {
   font-weight: 900;
   font-size: 2.5rem;
   margin-bottom: -0.1rem;
-  /* letter-spacing: .001rem; */
-  /* font-size: 1.5rem; */
 }
 
 .info {
@@ -438,9 +418,6 @@ hgroup h2 {
   height: 100%;
   padding: 67px 1.5rem 2.5rem;
   box-shadow: 0 0 2px 0 lightgrey;
-  /* flex-wrap: wrap;
-  justify-content: center;
-  text-align: center; */
 }
 #services .col-md-4 {
   margin-bottom: 1.5rem !important;
@@ -452,7 +429,6 @@ hgroup h2 {
 
 
 .media-img {
-  /* flex-wrap:; */
   border-radius: 50%;
   min-height:80px;
   max-height:80px;
@@ -471,9 +447,7 @@ hgroup h2 {
   display: flex;
   min-height: 400px;
   max-height: 400px;
-  /* flex-wrap: nowrap; */
-  /* visibility: hidden; */
-  overflow:hidden
+  overflow:hidden;
 }
 #portfolio .showcase-objects .item {
   position: relative;
@@ -529,7 +503,7 @@ hgroup h2 {
   border-radius: 50px;
   background-color: white;
 }
- .contact:hover {
+.contact:hover {
   transform: scale(1.1);
   box-shadow: 0 0 3px 1px lightslategray;
 }
